@@ -67,7 +67,7 @@
 <meta property="og:url" content="http://fredxue.com/2016/03/10/Event/index.html">
 <meta property="og:site_name" content="Something Binary">
 <meta property="og:description" content="A Brief Introduction to Browser Events Model">
-<meta property="og:updated_time" content="2016-03-10T13:27:37.638Z">
+<meta property="og:updated_time" content="2016-03-10T13:30:49.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Browser Events Model">
 <meta name="twitter:description" content="A Brief Introduction to Browser Events Model">
@@ -341,7 +341,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;a href=&#34;http://www.example.com&#34; onclick=&#34;triggerAlert(&#39;Joe&#39;); return false;&#34;&#62;Joe&#60;/a&#62;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>traditional model:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">      var triggerAlert = function () &#123;&#10;&#9;window.alert(&#34;Hey Joe&#34;);&#10;&#125;;&#10;&#10;// Assign an event handler&#10;document.onclick = triggerAlert;&#10;&#10;// Assign another event handler&#10;window.onload = triggerAlert;&#10;&#10;// Remove the event handler that was just assigned&#10;window.onload = null;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var triggerAlert = function () &#123;&#10;&#9;window.alert(&#34;Hey Joe&#34;);&#10;&#125;;&#10;&#10;// Assign an event handler&#10;document.onclick = triggerAlert;&#10;&#10;// Assign another event handler&#10;window.onload = triggerAlert;&#10;&#10;// Remove the event handler that was just assigned&#10;window.onload = null;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="DOM-Level-2"><a href="#DOM-Level-2" class="headerlink" title="DOM Level 2"></a>DOM Level 2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//Allows the registration of event listeners on the event target.&#10;addEventListener(DOMString type, EventListener listener, boolean useCapture)&#123;&#125;;&#10;&#10;//Allows the removal of event listeners from the event target.&#10;removeEventListener(DOMString type, EventListener listener, boolean useCapture)&#123;&#125;;&#10;&#10;//Allows sending the event to the subscribed event listeners.&#10;disPatchEvent(Event evt)&#123;&#125;</span><br></pre></td></tr></table></figure>
