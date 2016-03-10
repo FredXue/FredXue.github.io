@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredxue.com/"/>
-  <updated>2016-03-07T05:53:39.076Z</updated>
+  <updated>2016-03-10T13:27:37.638Z</updated>
   <id>http://fredxue.com/</id>
   
   <author>
@@ -14,6 +14,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Browser Events Model</title>
+    <link href="http://fredxue.com/2016/03/10/Event/"/>
+    <id>http://fredxue.com/2016/03/10/Event/</id>
+    <published>2016-03-10T13:18:44.000Z</published>
+    <updated>2016-03-10T13:27:37.638Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Events-type&quot;&gt;&lt;a href=&quot;#Events-type&quot; class=&quot;headerlink&quot; title=&quot;Events type&quot;&gt;&lt;/a&gt;Events type&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Common/W3C events: Mouse, Keyboard, HTML frame, HTML form&lt;/li&gt;
+&lt;li&gt;Touch events&lt;/li&gt;
+&lt;li&gt;Pointer Events&lt;br&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Event-Flow&quot;&gt;&lt;a href=&quot;#Event-Flow&quot; class=&quot;headerlink&quot; title=&quot;Event Flow&quot;&gt;&lt;/a&gt;Event Flow&lt;/h2&gt;&lt;p&gt;Consider the situation when there are 2 elements nested together. Both have event handlers registered on the same event type, say “click”. When the user clicks on the inner element, there are two possible ways to handle it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trigger the elements from outer to inner (event capturing). This model is implemented in Netscape Navigator.&lt;/li&gt;
+&lt;li&gt;Trigger the elements from inner to outer (event bubbling). This model is implemented in Internet Explorer and other browsers.[13]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;W3C takes a middle position in this struggle. Events are first captured until it reaches the target element, and then bubbled up. During the event flow, an event can be responded to at any element in the path (an observer) in either phase by causing an action, and/or by stopping the event (with method event.stopPropagation() for W3C-conforming browsers and command event.cancelBubble = true for Internet Explorer), and/or by cancelling the default action for the event.&lt;/p&gt;
+&lt;h2 id=&quot;Event-Object&quot;&gt;&lt;a href=&quot;#Event-Object&quot; class=&quot;headerlink&quot; title=&quot;Event Object&quot;&gt;&lt;/a&gt;Event Object&lt;/h2&gt;&lt;p&gt;The Event object provides a lot of information about a particular event, including information about target element, key pressed, mouse button pressed, mouse position, etc. Unfortunately, there are very serious browser incompatibilities in this area.&lt;/p&gt;
+&lt;h2 id=&quot;Event-handling-models&quot;&gt;&lt;a href=&quot;#Event-handling-models&quot; class=&quot;headerlink&quot; title=&quot;Event handling models&quot;&gt;&lt;/a&gt;Event handling models&lt;/h2&gt;&lt;p&gt;Events and event handling become central to web programming with the addition of the language to browsers, accompanying a switch in the rendering architecture of browsers from fetch and load page rendering to event driven, reflow based, page rendering. Initially, browsers wait, until they receive all of the resources associated with a page, to parse, process, draw, and present the page to the user. The displayed page remains unchanged until the browser requests a new page. With the change to dynamic page rendering, browsers loop continuously between processing, drawing, presenting content, and waiting for some new event trigger. Event triggers include the completion of the loading of a resource on the network e.g., downloads an image that can now be drawn on the screen, the completion of parsing a resource by the browser e.g., processes the HTML content of a page, the interaction of a user with the contents of the page e.g., clicks a button. &lt;/p&gt;
+&lt;h3 id=&quot;Design-Pattern&quot;&gt;&lt;a href=&quot;#Design-Pattern&quot; class=&quot;headerlink&quot; title=&quot;Design Pattern&quot;&gt;&lt;/a&gt;Design Pattern&lt;/h3&gt;&lt;p&gt;The event system, at its core, is simply a programming design pattern. The pattern starts with an agreement over a kind of event and:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the name String used for the event,&lt;/li&gt;
+&lt;li&gt;the type of the data structure used to represent the key properties of that event, and&lt;/li&gt;
+&lt;li&gt;the JavaScript object which will ‘emit’ that event.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The pattern is implemented by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;defining a JavaScript function which takes as an argument the data structure which was agreed upon, and&lt;/li&gt;
+&lt;li&gt;registering the function using the name String with the object which will emit the event.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;DOM-Level-0&quot;&gt;&lt;a href=&quot;#DOM-Level-0&quot; class=&quot;headerlink&quot; title=&quot;DOM Level 0&quot;&gt;&lt;/a&gt;DOM Level 0&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;inline model:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#60;a href=&amp;#34;http://www.example.com&amp;#34; onclick=&amp;#34;triggerAlert(&amp;#39;Joe&amp;#39;); return false;&amp;#34;&amp;#62;Joe&amp;#60;/a&amp;#62;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;traditional model:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;      var triggerAlert = function () &amp;#123;&amp;#10;&amp;#9;window.alert(&amp;#34;Hey Joe&amp;#34;);&amp;#10;&amp;#125;;&amp;#10;&amp;#10;// Assign an event handler&amp;#10;document.onclick = triggerAlert;&amp;#10;&amp;#10;// Assign another event handler&amp;#10;window.onload = triggerAlert;&amp;#10;&amp;#10;// Remove the event handler that was just assigned&amp;#10;window.onload = null;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;DOM-Level-2&quot;&gt;&lt;a href=&quot;#DOM-Level-2&quot; class=&quot;headerlink&quot; title=&quot;DOM Level 2&quot;&gt;&lt;/a&gt;DOM Level 2&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//Allows the registration of event listeners on the event target.&amp;#10;addEventListener(DOMString type, EventListener listener, boolean useCapture)&amp;#123;&amp;#125;;&amp;#10;&amp;#10;//Allows the removal of event listeners from the event target.&amp;#10;removeEventListener(DOMString type, EventListener listener, boolean useCapture)&amp;#123;&amp;#125;;&amp;#10;&amp;#10;//Allows sending the event to the subscribed event listeners.&amp;#10;disPatchEvent(Event evt)&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Some useful things to know :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To prevent an event from bubbling, developers must call the “stopPropagation()” method of the event object.&lt;/li&gt;
+&lt;li&gt;To prevent the default action of the event to be called, developers must call the “preventDefault” method of the event object.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;The main difference from the traditional model is that multiple event handlers can be registered for the same event.&lt;/em&gt;&lt;/strong&gt;  The useCapture option can also be used to specify that the handler should be called in the capture phase instead of the bubbling phase. This model is supported by Mozilla, Opera, Safari, Chrome and Konqueror.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IE soecific model omitted in this article. You can see &lt;a href=&quot;https://en.wikipedia.org/wiki/DOM_events#DOM_Level_0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Create-Custom-Event&quot;&gt;&lt;a href=&quot;#Create-Custom-Event&quot; class=&quot;headerlink&quot; title=&quot;Create Custom Event&quot;&gt;&lt;/a&gt;Create Custom Event&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h3 id=&quot;Step-1-Create-a-new-Event-object&quot;&gt;&lt;a href=&quot;#Step-1-Create-a-new-Event-object&quot; class=&quot;headerlink&quot; title=&quot;Step 1: Create a new Event object&quot;&gt;&lt;/a&gt;Step 1: Create a new Event object&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var event = new CustomEvent(&amp;#10;&amp;#9;&amp;#34;newMessage&amp;#34;, &amp;#10;&amp;#9;&amp;#123;&amp;#10;&amp;#9;&amp;#9;detail: &amp;#123;&amp;#10;&amp;#9;&amp;#9;&amp;#9;message: &amp;#34;Hello World!&amp;#34;,&amp;#10;&amp;#9;&amp;#9;&amp;#9;time: new Date(),&amp;#10;&amp;#9;&amp;#9;&amp;#125;,&amp;#10;&amp;#9;&amp;#9;bubbles: true,&amp;#10;&amp;#9;&amp;#9;cancelable: true&amp;#10;&amp;#9;&amp;#125;&amp;#10;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; The second parameter is an object with three properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;detail: a child object providing custom information about the event. In this example, we’ve added a message and time.&lt;/li&gt;
+&lt;li&gt;bubbles: if true, events will bubble to ancestors of the element which fired the event.&lt;/li&gt;
+&lt;li&gt;cancelable: if true, events can be canceled using the event object’s stopPropagation() method.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;Step-2-Dispatch-this-event-on-a-specific-element&quot;&gt;&lt;a href=&quot;#Step-2-Dispatch-this-event-on-a-specific-element&quot; class=&quot;headerlink&quot; title=&quot;Step 2: Dispatch this event on a specific element&quot;&gt;&lt;/a&gt;Step 2: Dispatch this event on a specific element&lt;/h3&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;document.getElementById(&amp;#34;msgbox&amp;#34;).dispatchEvent(event);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&quot;Step-3-Any-number-of-handlers-can-subscribe-to-this-event&quot;&gt;&lt;a href=&quot;#Step-3-Any-number-of-handlers-can-subscribe-to-this-event&quot; class=&quot;headerlink&quot; title=&quot;Step 3: Any number of handlers can subscribe to this event&quot;&gt;&lt;/a&gt;Step 3: Any number of handlers can subscribe to this event&lt;/h3&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;document.addEventListener(&amp;#34;newMessage&amp;#34;, newMessageHandler, false);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="binary" scheme="http://fredxue.com/categories/binary/"/>
+    
+    
+      <category term="events" scheme="http://fredxue.com/tags/events/"/>
+    
+      <category term="js" scheme="http://fredxue.com/tags/js/"/>
+    
+      <category term="web" scheme="http://fredxue.com/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>2015下半年读书总结</title>
