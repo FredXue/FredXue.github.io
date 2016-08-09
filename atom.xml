@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Something Binary</title>
-  <subtitle>Here Today. Gone Tommorrow.</subtitle>
+  <title>七夕•和你在一起</title>
+  <subtitle>Fred ❤️ Marisol</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredxue.com/"/>
-  <updated>2016-08-08T08:35:55.077Z</updated>
+  <updated>2016-08-09T13:52:35.178Z</updated>
   <id>http://fredxue.com/</id>
   
   <author>
@@ -16,398 +16,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>(Repo)hexo搭建博客</title>
-    <link href="http://fredxue.com/2016/08/08/hexo/"/>
-    <id>http://fredxue.com/2016/08/08/hexo/</id>
-    <published>2016-08-08T08:31:37.000Z</published>
-    <updated>2016-08-08T08:35:55.077Z</updated>
+    <title>给丁乙宝贝的第一封情书</title>
+    <link href="http://fredxue.com/2016/08/09/belongsToMarisol/"/>
+    <id>http://fredxue.com/2016/08/09/belongsToMarisol/</id>
+    <published>2016-08-09T06:19:28.000Z</published>
+    <updated>2016-08-09T13:52:35.178Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;快速、简洁且高效的博客框架&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;原文-from-A-K-A-木鬼&quot;&gt;&lt;a href=&quot;#原文-from-A-K-A-木鬼&quot; class=&quot;headerlink&quot; title=&quot;原文 from A.K.A 木鬼&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://slowlysuck.com/2016/01/13/hexo-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文 from A.K.A 木鬼&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;1、工具&quot;&gt;&lt;a href=&quot;#1、工具&quot; class=&quot;headerlink&quot; title=&quot;1、工具&quot;&gt;&lt;/a&gt;1、工具&lt;/h2&gt;&lt;h3 id=&quot;Node-js&quot;&gt;&lt;a href=&quot;#Node-js&quot; class=&quot;headerlink&quot; title=&quot;Node.js&quot;&gt;&lt;/a&gt;Node.js&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。Node.js 的包管理器 npm，是全球最大的开源库生态系统。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://nodejs.cn/download/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js官网&lt;/a&gt;，官网下载安装好Node。&lt;/p&gt;
-&lt;p&gt;cmd中输入：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node -v&amp;#10;npm -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;有版本输出即表示安装成功。&lt;/p&gt;
-&lt;p&gt;安装完Node之后，推荐装一下npm的&lt;a href=&quot;http://npm.taobao.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;淘宝镜像&lt;/a&gt;，后面npm install的时候速度会快很多，也会更稳定。&lt;/p&gt;
-&lt;h3 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;Hexo&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;易用，部署简单，基于Node.js，速度确实很快。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; title=&quot;Hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官网&lt;/a&gt;，文档，API，插件等等官网上都有。&lt;/p&gt;
-&lt;h3 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h3&gt;&lt;p&gt;Git就不多介绍了，你需要一个Git账号，掌握基本的clone,push和pull操作即可。新用户注意在github上添加ssh_key。&lt;/p&gt;
-&lt;h2 id=&quot;2、搭建&quot;&gt;&lt;a href=&quot;#2、搭建&quot; class=&quot;headerlink&quot; title=&quot;2、搭建&quot;&gt;&lt;/a&gt;2、搭建&lt;/h2&gt;&lt;h3 id=&quot;本地blog环境搭建&quot;&gt;&lt;a href=&quot;#本地blog环境搭建&quot; class=&quot;headerlink&quot; title=&quot;本地blog环境搭建&quot;&gt;&lt;/a&gt;本地blog环境搭建&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;新建my_blog目录作为博客在本地的父级目录，所有的操作都在my_blog里面完成。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir my_blog&amp;#10;cd my_blog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;安装hexo&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;初始化博客，完成后会发现my_blog目录下多了很多东西。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;安装hexo包依赖，my_blog目录下出现一个名为【node_modules】的目录。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;以上所有涉及npm的操作，都可以用cnpm代替npm。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;进入hexo的调试状态，使用浏览器访问 &lt;a href=&quot;&quot;&gt;localhost:4000&lt;/a&gt; 即可查看搭建效果，进行调试。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;至此，博客基本搭建完成。&lt;/p&gt;
-&lt;p&gt;确实很快。&lt;/p&gt;
-&lt;h3 id=&quot;部署到Github&quot;&gt;&lt;a href=&quot;#部署到Github&quot; class=&quot;headerlink&quot; title=&quot;部署到Github&quot;&gt;&lt;/a&gt;部署到Github&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;在Github上新建一个repository，命名为&lt;strong&gt;githubID.github.io&lt;/strong&gt;，githubID是你在github上的username。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;编辑my_blog目录下的&lt;strong&gt;_config.yml&lt;/strong&gt;文件中的如下内容：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;deploy:&amp;#10;&amp;#9;type: git&amp;#10;&amp;#9;repository: https://github.com/githubID/githubID.github.io&amp;#10;&amp;#9;branch: master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;执行以下命令完成部署：（执行&lt;strong&gt;hexo deploy&lt;/strong&gt;之前要先安装&lt;strong&gt;hexo-deployer-git&lt;/strong&gt;插件）&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo generate&amp;#10;npm install hexo-deployer-git --save&amp;#10;hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;generate动作是将资源文件渲染成静态的html，每次对my_blog目录下的文件有修改动作，都需要generate一下。然后通过&lt;strong&gt;hexo server&lt;/strong&gt;进行调试，通过&lt;strong&gt;hexo deploy&lt;/strong&gt;进行部署。&lt;/p&gt;
-&lt;p&gt;  至此博客基本部署完成。访问githubID.github.io即可查看自己的博客。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;3、维护与完善&quot;&gt;&lt;a href=&quot;#3、维护与完善&quot; class=&quot;headerlink&quot; title=&quot;3、维护与完善&quot;&gt;&lt;/a&gt;3、维护与完善&lt;/h2&gt;&lt;h3 id=&quot;主题安装&quot;&gt;&lt;a href=&quot;#主题安装&quot; class=&quot;headerlink&quot; title=&quot;主题安装&quot;&gt;&lt;/a&gt;主题安装&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/&quot; title=&quot;Hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官网&lt;/a&gt;提供了丰富的主题模板， 知乎上也有一个关于Hexo主题的&lt;a href=&quot;https://www.zhihu.com/question/24422335&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;整理&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;安装主题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;进入&lt;strong&gt;my_blog/theme/&lt;/strong&gt;目录，打开Git bash&lt;/li&gt;
-&lt;li&gt;选择你中意的主题，找到他的git repository url。&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;clone主题到theme目录下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone git@github.com:iissnan/hexo-theme-next.git ./next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;修改&lt;strong&gt;my_blog/_config.yml&lt;/strong&gt;的如下字段即可应用该主题：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;theme: next&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;至此主题基本安装完成。&lt;/p&gt;
-&lt;p&gt;这时候会有两个&lt;strong&gt;_config.yml&lt;/strong&gt;出现，一个在&lt;strong&gt;my_blog/&lt;/strong&gt;目录下，一个在&lt;strong&gt;my_blog/theme/theme_name/&lt;/strong&gt;目录下。&lt;/p&gt;
-&lt;p&gt;前者是博客整体的相关配置文件，后者是主题的相关配置文件。&lt;/p&gt;
-&lt;p&gt;对于&lt;strong&gt;my_blog/_config.yml&lt;/strong&gt;，可以对如下参数进行自定义：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;title: good.kid.mAAd.city&amp;#10;subtitle: slowlysuck is a good kid in a mad city&amp;#10;description: slowlysuck is a good kid in a mad city&amp;#10;author: AKA&amp;#26408;&amp;#39740;&amp;#10;language: zh-Hans #&amp;#35774;&amp;#32622;&amp;#21338;&amp;#23458;&amp;#35821;&amp;#35328;&amp;#20026;&amp;#20013;&amp;#25991;&amp;#10;&amp;#10;#Archives &amp;#40664;&amp;#35748;&amp;#20540;&amp;#20026;2&amp;#65292;&amp;#36825;&amp;#37324;&amp;#37117;&amp;#20462;&amp;#25913;&amp;#20026;1&amp;#65292;&amp;#30456;&amp;#24212;&amp;#39029;&amp;#38754;&amp;#23601;&amp;#21482;&amp;#20250;&amp;#21015;&amp;#20986;&amp;#26631;&amp;#39064;&amp;#65292;&amp;#32780;&amp;#38750;&amp;#20840;&amp;#25991;&amp;#10;## 2: Enable pagination&amp;#10;## 1: Disable pagination&amp;#10;## 0: Fully Disable&amp;#10;archive: 1&amp;#10;category: 1&amp;#10;tag: 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;对于&lt;strong&gt;my_blog/theme/theme_name/_config.yml&lt;/strong&gt;，不同主题存在一定差异。一般github上会有主题的相关Readme文档，根据文档进行自定义即可。&lt;/p&gt;
-&lt;p&gt;修改完成后，记得&lt;strong&gt;hexo generate&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id=&quot;发表日志&quot;&gt;&lt;a href=&quot;#发表日志&quot; class=&quot;headerlink&quot; title=&quot;发表日志&quot;&gt;&lt;/a&gt;发表日志&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;日志模板定制：&lt;/p&gt;
-&lt;p&gt;  &lt;strong&gt;my_blog/scaffolds/&lt;/strong&gt;目录下的post.md可以定制自己的日志模板，新的日志都会按照这个模板创建。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使用如下命令完成新日志的创建&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new newArticle&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;然后进入my_blog/source/，编辑newArticle.md即可。在&lt;strong&gt;hexo server&lt;/strong&gt;状态下，刷新一下页面即可看到新的日志。&lt;/p&gt;
-&lt;h2 id=&quot;后续&quot;&gt;&lt;a href=&quot;#后续&quot; class=&quot;headerlink&quot; title=&quot;后续&quot;&gt;&lt;/a&gt;后续&lt;/h2&gt;&lt;h3 id=&quot;第三方服务&quot;&gt;&lt;a href=&quot;#第三方服务&quot; class=&quot;headerlink&quot; title=&quot;第三方服务&quot;&gt;&lt;/a&gt;第三方服务&lt;/h3&gt;&lt;p&gt;现在很多成熟的主题一般都会集成一些第三方服务，根据主题的配置文件，完成相应的填充和不全即可。&lt;/p&gt;
-&lt;p&gt;比较推荐的第三方有下面几个：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;多说评论，支持自定义，相较于Disqus，支持微博等国内社交平台的登录方式。&lt;/li&gt;
-&lt;li&gt;Swiftpye搜索，有30天试用期，30天过后依旧有免费版可用。支持自定义搜索样式。&lt;/li&gt;
-&lt;li&gt;jiathis分享，日志底部的分享按钮。&lt;/li&gt;
-&lt;li&gt;百度统计，按个人喜好添加。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;域名&quot;&gt;&lt;a href=&quot;#域名&quot; class=&quot;headerlink&quot; title=&quot;域名&quot;&gt;&lt;/a&gt;域名&lt;/h3&gt;&lt;p&gt;完成上述配置后，只能通过githubID.github.io来访问自己的博客。&lt;/p&gt;
-&lt;p&gt;如果需要定制个人域名，可以去&lt;a href=&quot;https://www.godaddy.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;狗爹&lt;/a&gt;或者&lt;a href=&quot;http://wanwang.aliyun.com/domain/?spm=5176.383338.1907008.1.4vEllo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阿里云&lt;/a&gt;购买域名。&lt;/p&gt;
-&lt;p&gt;然后在git仓库的根目录下添加一个CNAME文件，文件中只需写上你申请的域名。&lt;/p&gt;
-&lt;p&gt;最后在你的域名配置中，指向githubID.github.io即可。&lt;/p&gt;
-&lt;h3 id=&quot;同步&quot;&gt;&lt;a href=&quot;#同步&quot; class=&quot;headerlink&quot; title=&quot;同步&quot;&gt;&lt;/a&gt;同步&lt;/h3&gt;&lt;p&gt;推荐将my_blog目录也push到git上去，这样就不用担心hexo静态文件的丢失了。&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;Shall I compare thee to a summer’s day?&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;丁乙同学，你好呀&lt;/p&gt;
+&lt;p&gt;我叫Fred，男，身高178，体重68。\&lt;br&gt;你现在可是我的女友喔&lt;/p&gt;
+&lt;p&gt;让我好好想想我们是怎么走到一起的 \&lt;br&gt;不然我一定不会相信 \&lt;br&gt;你那么善良，知性又美丽 \&lt;br&gt;而我只是个刚毕业，一无所有的穷小子 &lt;/p&gt;
+&lt;p&gt;或许上帝在这件事上对我很偏心 \&lt;br&gt;让我捡了个大便宜&lt;/p&gt;
+&lt;p&gt;原谅现在我现在没法陪在你身边 \&lt;br&gt;甚至我们的第一个情人节我也只能通过网络来传达感情 \&lt;br&gt;但我的心是在你那里的！ \&lt;br&gt;每时每刻都是 \&lt;br&gt;你也一定感受到了它的存在 &lt;/p&gt;
+&lt;p&gt;像歌里说的，也是一直以来的梦想： \&lt;br&gt;未来满头白发，公园的长椅上 \&lt;br&gt;你也许会说声谢谢我 \&lt;br&gt;如果这一生到尽头，换你这句话很足够 \&lt;/p&gt;
+&lt;p&gt;冬季与你相识 \&lt;br&gt;夏季与你相恋 \&lt;br&gt;愿再与你相知相爱相守 &lt;/p&gt;
+&lt;p&gt;幸福， \&lt;br&gt;不过如此。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;快速、简洁且高效的博客框架&lt;/blockquote&gt;&lt;br&gt;
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;Shall I compare thee to a summer’s day?&lt;/blockquote&gt;&lt;br&gt;
     
     </summary>
     
-      <category term="binary" scheme="http://fredxue.com/categories/binary/"/>
     
-    
-      <category term="blog" scheme="http://fredxue.com/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java序列化</title>
-    <link href="http://fredxue.com/2016/08/08/java-ser/"/>
-    <id>http://fredxue.com/2016/08/08/java-ser/</id>
-    <published>2016-08-08T08:30:16.000Z</published>
-    <updated>2016-08-08T08:37:13.401Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;JAVA默认序列化机制和其他序列化框架的特性分析&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;What-is-object-serializatoin&quot;&gt;&lt;a href=&quot;#What-is-object-serializatoin&quot; class=&quot;headerlink&quot; title=&quot;What is object serializatoin&quot;&gt;&lt;/a&gt;What is object serializatoin&lt;/h3&gt;&lt;p&gt;Object serialization is the process of saving an object’s state to a sequence of bytes, as well as the process of rebuilding those bytes into a live object at some future time.&lt;/p&gt;
-&lt;h3 id=&quot;Why-we-need-serialization&quot;&gt;&lt;a href=&quot;#Why-we-need-serialization&quot; class=&quot;headerlink&quot; title=&quot;Why we need serialization&quot;&gt;&lt;/a&gt;Why we need serialization&lt;/h3&gt;&lt;p&gt;不同的JVM之间需要通信，尤其是在分布式应用中，而存活在JVM（内存）中的对象是无法在不同机器之间传输的，因此需要一种方法将内存中的对象转化成二进制字节流用来持久化或传输。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;对象序列化除了JDK的序列化方法，还有其他一些第三方序列化框架。&lt;/p&gt;
-&lt;h2 id=&quot;JDK序列化&quot;&gt;&lt;a href=&quot;#JDK序列化&quot; class=&quot;headerlink&quot; title=&quot;JDK序列化&quot;&gt;&lt;/a&gt;JDK序列化&lt;/h2&gt;&lt;h3 id=&quot;How-to：&quot;&gt;&lt;a href=&quot;#How-to：&quot; class=&quot;headerlink&quot; title=&quot;How to：&quot;&gt;&lt;/a&gt;How to：&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;实现java.io.serializable接口，这个接口知识一个标志性接口，并没有声明任何方法。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;import java.io.Serializable;&amp;#10;&amp;#10;class TestSerial implements Serializable &amp;#123;&amp;#10;&amp;#9;public byte version = 100;&amp;#10;&amp;#9;public byte count = 0;&amp;#10;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Calling  writeObject()&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;public static void main(String args[]) throws IOException &amp;#123;&amp;#10;&amp;#9;FileOutputStream fos = new FileOutputStream(&amp;#34;temp.out&amp;#34;);&amp;#10;&amp;#9;ObjectOutputStream oos = new ObjectOutputStream(fos);&amp;#10;&amp;#9;TestSerial ts = new TestSerial();&amp;#10;&amp;#9;oos.writeObject(ts);&amp;#10;&amp;#9;oos.flush();&amp;#10;&amp;#9;oos.close();&amp;#10;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here writeObject() method actually kicks off the serialize algorithm.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Deserializaiton&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;public static void main(String args[]) throws IOException &amp;#123;&amp;#10;&amp;#9;FileInputStream fis = new FileInputStream(&amp;#34;temp.out&amp;#34;);&amp;#10;&amp;#9;ObjectInputStream oin = new ObjectInputStream(fis);&amp;#10;&amp;#9;TestSerial ts = (TestSerial) oin.readObject();&amp;#10;&amp;#9;System.out.println(&amp;#34;version=&amp;#34;+ts.version);&amp;#10;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;这里 对象的恢复发生在 oin.readObject()这个方法被调用的时候。 这个方法从二进制字节流中将整个原始的对象图恢复出一个副本出来。&lt;/p&gt;
-&lt;h3 id=&quot;Rule：&quot;&gt;&lt;a href=&quot;#Rule：&quot; class=&quot;headerlink&quot; title=&quot;Rule：&quot;&gt;&lt;/a&gt;Rule：&lt;/h3&gt;&lt;p&gt;Rule #1: The object to be persisted must implement the Serializable interface or inherit that implementation from its object hierarchy.&lt;/p&gt;
-&lt;p&gt;Rule #2: The object to be persisted must mark all nonserializable fields transient&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;没有实现序列化接口的类： java.lang.Object    一些系统级的类Thread，OutputStream and Socket &lt;/li&gt;
-&lt;li&gt;a constructor is called only when a new instance is created.&lt;/li&gt;
-&lt;li&gt;static 和 transient 字段被忽略&lt;/li&gt;
-&lt;li&gt;推荐显示声明一个private的serialVersionID， 因为不显式声明JVM会根据类的情况缺省生成一个ID，而这是类细节敏感的，会容易造成莫名的 InvalidClassExceptions。 为什么要是private关键字？：apply only to the immediately declaring class。 对继承的对象无效。&lt;/li&gt;
-&lt;li&gt;Customise serialise and deserialise process with overriding two private method  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;Features-amp-Details&quot;&gt;&lt;a href=&quot;#Features-amp-Details&quot; class=&quot;headerlink&quot; title=&quot;Features &amp;amp; Details:&quot;&gt;&lt;/a&gt;Features &amp;amp; Details:&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;首先写出对象的元数据&lt;/li&gt;
-&lt;li&gt;递归的写出对象的父类信息直到java.lang.object，因为Object没有实现序列化接口&lt;/li&gt;
-&lt;li&gt;一旦完成了元数据的写出，它会开始写对象真正的数据。&lt;/li&gt;
-&lt;li&gt;递归地从最高的父类开始写对象的数据直到最后的子类。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;因此对象序列化后在字节流中的信息包括序列化协议信息，流版本，是否为新对象，是否为新类，类名，SerialVersionID，对象的各个字段（如果字段是引用的另外一个对象contain，会写一个规定的JVM签名），父类信息（同上），contain对象的序列化信息。&lt;/p&gt;
-&lt;p&gt;JAVA默认在序列化对象时，不仅会序列化当前对象本身，还会对该对象引用的其它对象也进行序列化，同样地，这些其它对象引用的另外对象也将被序列化，以此类推。所以，如果一个对象包含的成员变量是容器类对象，而这些容器所含有的元素也是容器类对象，那么这个序列化的过程就会较复杂，开销也较大。&lt;/p&gt;
-&lt;p&gt;可以看出JDK默认的序列化转化的信息较全，因此空间和时间开销是巨大的。&lt;/p&gt;
-&lt;h2 id=&quot;其他JAVA序列化框架&quot;&gt;&lt;a href=&quot;#其他JAVA序列化框架&quot; class=&quot;headerlink&quot; title=&quot;其他JAVA序列化框架&quot;&gt;&lt;/a&gt;其他JAVA序列化框架&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;json&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;json的序列化框架有fastjson,jackson,gson等。冗长且没有IDL；适用于数据量小，实时性较低（例如秒级别）的服务； Web应用前后端的数据交换；JSON格式具有非常强的前后兼容性，并且调式方便，所以对客户端与服务端的通讯尤其适用。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;xml&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;xml的序列化框架有XStream。XML的序列化和反序列化的空间和时间开销都比较大，对于对性能要求在ms级别的服务，不推荐使用。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;hessian&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;hessian主要用于java序列化。它的实现机制是着重于数据，附带简单的类型信息的方法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;对于简单的数据类型。就像Integer a = 1，hessian会序列化成I 1这样的流，I表示int or Integer，1就是数据内容。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对于复杂对象，通过Java的反射机制，hessian把对象所有的属性当成一个Map来序列化，产生类似M className propertyName1 I 1 propertyName S stringValue&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对于引用对象，在序列化过程中，如果一个对象之前出现过，hessian会直接插入一个R index这样的块来表示一个引用位置，从而省去再次序列化和反序列化的时间。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Thift&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Thrift是Facebook开源提供的一个高性能，轻量级RPC服务框架，其产生正是为了满足当前大数据量、分布式、跨语言、跨平台数据通讯的需求。 但是，Thrift并不仅仅是序列化协议，而是一个RPC框架。&lt;br&gt;相对于JSON和XML而言，Thrift在空间开销和解析性能上有了比较大的提升，对于对性能要求比较高的分布式系统，它是一个优秀的RPC解决方案；但是由于Thrift的序列化被嵌入到Thrift框架里面，Thrift框架本身并没有透出序列化和反序列化接口，这导致其很难和其他传输层协议共同使用（例如HTTP）。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;protobuf&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;序列化数据非常简洁，紧凑，析速度非常快，提供了非常友好的动态库。使用简介，反序列化只需要一行代码。需要定义Message描述文件。但是在JavaBean和proto之间的转换较麻烦。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;avro&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Avro的产生解决了JSON的冗长和没有IDL的问题。 Avro提供两种序列化格式：JSON格式或者Binary格式。Binary格式在空间开销和解析性能方面可以和Protobuf媲美，JSON格式方便测试阶段的调试。&lt;/p&gt;
-&lt;p&gt;动态类型：Avro并不需要生成代码，模式和数据存放在一起，而模式使得整个数据的处理过程并不生成代码、静态数据类型等等。这方便了数据处理系统和语言的构造。&lt;br&gt;未标记的数据：由于读取数据的时候模式是已知的，那么需要和数据一起编码的类型信息就很少了，这样序列化的规模也就小了。&lt;br&gt;不需要用户指定字段号：即使模式改变，处理数据时新旧模式都是已知的，所以通过使用字段名称可以解决差异问题。&lt;/p&gt;
-&lt;p&gt;Reference：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;ved=0ahUKEwjr9bmYpbHOAhUXS2MKHZ-FBsMQFggcMAA&amp;amp;url=http%3a%2f%2fwww%2ejavaworld%2ecom%2fcommunity%2fnode%2f2915&amp;amp;usg=AFQjCNHoVbP6avcH8z2XE4COESBstSNv1g&amp;amp;sig2=IxoKLEzlvMgqB3RhGwdRZQ&amp;amp;bvm=bv.129391328,d.cGc&amp;amp;cad=rja&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;The Java serialization algorithm revealed&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://luojinping.com/2016/01/03/Java%E5%BA%8F%E5%88%97%E5%8C%96/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Zane blog&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/serialization-and-deserialization&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;序列化与反序列化&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;JAVA默认序列化机制和其他序列化框架的特性分析&lt;/blockquote&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="bianry" scheme="http://fredxue.com/categories/bianry/"/>
-    
-    
-      <category term="java" scheme="http://fredxue.com/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>graduate</title>
-    <link href="http://fredxue.com/2016/07/22/graduate/"/>
-    <id>http://fredxue.com/2016/07/22/graduate/</id>
-    <published>2016-07-22T08:43:43.000Z</published>
-    <updated>2016-07-22T09:36:51.112Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;Q-You-know-this-moment-is-still-coming-It’s-still-hard-for-you-and-for-the-rest-of-team&quot;&gt;&lt;a href=&quot;#Q-You-know-this-moment-is-still-coming-It’s-still-hard-for-you-and-for-the-rest-of-team&quot; class=&quot;headerlink&quot; title=&quot;Q: You know this moment is still coming. It’s still hard for you and for the rest of team.&quot;&gt;&lt;/a&gt;Q: You know this moment is still coming. It’s still hard for you and for the rest of team.&lt;/h1&gt;&lt;p&gt;Pop: I’m trying to wrap my head aroud why I’m standing here and he’s not.  And we all know why. It’s not Tim Duncun to bring any attention to himself.&lt;/p&gt;
-&lt;p&gt;We’ve been saying it for 19 years and he really cared about doing the best job he could basketball-wise and being who he was for his teammates. And being a somebody who loved, you know, his family so that’s really who he is. So this is the furthest thing from his mind and so I figured out i better come out here do this, somehow say goodbye to him which is an impossiblity for a lot of reasons.&lt;/p&gt;
-&lt;p&gt;I tried to think of how to campare and what to say about him. I get a few thoughts that may be boring for all of you. You know everybody always talks about who’d like to eat dinner with. You know, if you have one night to go to dinner, go to lunch with so and so. Who would you like to do it with. People will say, you know, Mother Teresa and Jesus and the Dalai Lama and, OK, I get it. But if you think about a little bit more earthly, worldly type people, you know, people who interesting. I think of people like William F. Buckley on the right and Gore Vidal on the left, when they had their debates – some of you are old enough to remember that stuff – I mean really clever and insightful people and ideas blow your mind and that kind of stuff.  And I can honestly tell you my dinner would be with Timmy. and it is because he is the most real, consitant, true person I’ve ever met in my life. He is so genuine that it blows your mind like Buckley and Vidal would in an avant-garde sort of way.&lt;/p&gt;
-&lt;p&gt;To spent time with Timmy is really sublime in many ways. People don’t know about his cleverness, you know I think of people like John Cleese, clever, incisive, sarcarstic. Nobody knows that about Timmy. I can be on him in a game asking why he is not rebounding in a relatively stern way and really get on him in front of everybody. and on the way back to the court, he’ll say, “Thanks for the motivation, Pop. Thanks for your support, Pop.” turn away his eyes up here and mobil still laughing.  People don’t see those things. What his teammates have that’s why his teammates love him cause he’s been the best teammate that anybody could ever imagine. Think about how many people have played with him and all Tim Duncun has to do is raise one of his arms, right or left, puts it on their shoulder and it’s a warmth and confident they feel that allows them to becom the best possible player they can be. We have a lot of guys go through here and  be successful and go on to other places. And it’s because Tim Duncun create that environment for whoever came through here to be able to develop and create livings for their families. We are all grateful to him.&lt;/p&gt;
-&lt;p&gt;It’s not a show of humility in any senses or form. People who grew up with me know me. I would not be standing here if it wasn’t for Tim Duncun. I’d be in the Budweiser League someplace in America, fat and still trying to play basketball or coach basketball. He is why I’m standing here. He’s made living for hundreds of us, staff and coaches, over the years, and neve said a word, just came to work everyday. Came early. Stay late. Was there every single person. from the top of the roster to the bottom of the roster beacuse that’s who he was. So in all those respects he’s irreplaceable. It can’t happen(shrug). We are all unique. But he has been so important to so many people it’s just mind-boggling. To think he’s gonna be gone makes it’s really difficult to imagine walk into practice, going to a game, getting on the bus, taking him a piece of carrot cake, whatever it might be.&lt;/p&gt;
-&lt;p&gt;He’s been true to himself. I read an article yesterday, i don’t do that often because most of you all write is junk so I don’t read it very much, but this was by Jason Gay from Wall Street Journal. He pretty much got it right on the head about who Timmy is. I don’t know how much basketball he watches or who consulted for the article, but he is right on the money as far as Timmy’s class and humility and consistency over time.  You don’t see Timmy beating his chest as if it was the first time a human being dunk a basketball, as a lot of  people do these days. He’s not pointing to the sky. He’s not glamming to the cameras. He just plays and we’ve seen it for so long that it becomes almost mundane. But so special and it has to be remmembered. This author, to quote him, said ‘he hid in plain sight better than anybody ever seen. ‘ It’s true and I just tried think of somebody like that. I’m a foodie and wine guy so the name that popped into my head was Anthony Bourdain. Nobody knew who the hell he was except foodies. Then he wrote his first book and became popular and all of a sudden he’s on CNN. He is doing his travel shows. He’s erudite and incisive and people love it. He’s talking about the Ramones and he’s talking about hooch and he’s talking about food and everybody says, ‘Who is this guy?’ And he’s been there all along. You just didn’t notice him in the beginning. It’s been that way in Timmy. Greatest player in his position ever to step on a court. And now people saying ‘oh yeah’ that kind of thing. Timmy doesn’t care.&lt;/p&gt;
-&lt;h1 id=&quot;Q-“Did-you-also-read-the-WSJ-piece-about-the-social-psychology-paper-that-Tim-wrote-while-a-junior-at-Wake&quot;&gt;&lt;a href=&quot;#Q-“Did-you-also-read-the-WSJ-piece-about-the-social-psychology-paper-that-Tim-wrote-while-a-junior-at-Wake&quot; class=&quot;headerlink&quot; title=&quot;Q:  “Did you also read the WSJ piece about the social psychology paper that Tim wrote while a junior at Wake?&quot;&gt;&lt;/a&gt;Q:  “Did you also read the WSJ piece about the social psychology paper that Tim wrote while a junior at Wake?&lt;/h1&gt;&lt;p&gt;Yeah. We all know Timmy is a grad, but he took his education very seriously. It’s something he relishes and is very proud of. But at this point I can tell you that thing that made him the happiest – I’m speaking for him now and I hope I’m  accurate – but I think the thing that made him happiest, beyond the fans and his teammates and all sthat sort of thing, was the time he spent with his two children before games on the bench over there. That’s who he was and that’s who he still is.”&lt;/p&gt;
-&lt;h1 id=&quot;Q-A-lot-of-teams-that-lose-a-superstar-are-left-with-a-big-reconstruction-period-The-Spurs-are-not-in-that-spot-How-much-has-his-unselfishness-as-far-as-salary-helped-with-that&quot;&gt;&lt;a href=&quot;#Q-A-lot-of-teams-that-lose-a-superstar-are-left-with-a-big-reconstruction-period-The-Spurs-are-not-in-that-spot-How-much-has-his-unselfishness-as-far-as-salary-helped-with-that&quot; class=&quot;headerlink&quot; title=&quot;Q: A lot of teams that lose a superstar are left with a big reconstruction period. The Spurs are not in that spot. How much has his unselfishness, as far as salary, helped with that?&quot;&gt;&lt;/a&gt;Q: A lot of teams that lose a superstar are left with a big reconstruction period. The Spurs are not in that spot. How much has his unselfishness, as far as salary, helped with that?&lt;/h1&gt;&lt;p&gt;“Timmy, along with other people, Many and Tony especially, over the years, have sacrificed and allowed us to keep a team together. Of course, R.C. and his staff have been spectacular keeping the talent level up and searching out gems that maybe no one else knew about or paid attention to. The combination of all those things has worked so we can continue to be a competitive team.”&lt;/p&gt;
-&lt;h1 id=&quot;Q-Any-talk-of-him-coming-in-here-to-help-in-the-future-still-be-part-of-this&quot;&gt;&lt;a href=&quot;#Q-Any-talk-of-him-coming-in-here-to-help-in-the-future-still-be-part-of-this&quot; class=&quot;headerlink&quot; title=&quot;Q: Any talk of him coming in here to help in the future, still be part of this?&quot;&gt;&lt;/a&gt;Q: Any talk of him coming in here to help in the future, still be part of this?&lt;/h1&gt;&lt;p&gt;“He’s too smart to coach, that’s for sure. I don’t think we’re going to see Timmy going up and down the sidelines much. But I have a notion he will at least listen to being involved, somehow or other, maybe even on a part-time basis. I’m certainly going to hit with everything I have to try to keep him around here as long as I possibly can because he means that much to everyone in the organization.”&lt;/p&gt;
-&lt;h1 id=&quot;Q-What-one-thing-will-the-organization-miss-most-with-Duncan-gone&quot;&gt;&lt;a href=&quot;#Q-What-one-thing-will-the-organization-miss-most-with-Duncan-gone&quot; class=&quot;headerlink&quot; title=&quot;Q: What one thing will the organization miss most with Duncan gone?&quot;&gt;&lt;/a&gt;Q: What one thing will the organization miss most with Duncan gone?&lt;/h1&gt;&lt;p&gt;“I just think the aura that he creates, the iconic figure that he established for us all those years, the security, the safety net, the home plate, the hub of the wheel, all that sort of thing is who he was as a player. Even when he didn’t score as many points the last couple of years, people still don’t realize how efficient he was defensively. Just look to see where he ranked this last year as an individual player defensively, then you’ll figure that out very quickly.&lt;/p&gt;
-&lt;p&gt;“Offensively, people know how to react because of where he’s at. He’ll move on the court and react when other players wouldn’t have a clue, and they’d just be in the way. But he knows where to go. So even though his production stat-wise wasn’t the same, we won 67 games because he still was the center of everything we did on both ends of the court; even whether people scored more. So we’ll miss that and have to figure it out. Other people will have to step up leadership-wise. That’ll be a huge thing for us: Who’s gonna step up and be that quiet leader that everybody responds to and respects and feeds off of? Not a lot of people can handle that. So we’ll see how that goes.”&lt;/p&gt;
-&lt;h1 id=&quot;Q-Is-there-beauty-in-the-way-Tim-went-out&quot;&gt;&lt;a href=&quot;#Q-Is-there-beauty-in-the-way-Tim-went-out&quot; class=&quot;headerlink&quot; title=&quot;Q: Is there beauty in the way Tim went out?&quot;&gt;&lt;/a&gt;Q: Is there beauty in the way Tim went out?&lt;/h1&gt;&lt;p&gt;You know everybody is diiferent. People go out in different time for different reasons. This the way one would always expect Timmy to go out. He is the same person as far as his values and opnions of himself as the day he came in. I can still remember before his father passed away, looking at me in the eye saying that “I’m hold you responsible to make sure when he is done he is the same person as he is now.” and in that respect he is. He has grown as a person as we all do through experiences. But his inner core, he was over himself when he  was came in. After all these accolades and all these success, he’s still gotten over himself. He hasn’t changed a lick.&lt;/p&gt;
-&lt;h1 id=&quot;Q-Did-you-try-to-talk-him-out-of-it&quot;&gt;&lt;a href=&quot;#Q-Did-you-try-to-talk-him-out-of-it&quot; class=&quot;headerlink&quot; title=&quot;Q: Did you try to talk him out of it?&quot;&gt;&lt;/a&gt;Q: Did you try to talk him out of it?&lt;/h1&gt;&lt;p&gt;“No. I’m so tired of coaching him, he’s so stubborn. I would never try to talk him out of anything.”&lt;/p&gt;
-&lt;p&gt;His ability of accepting direction and coaching was that a  pretty evident of early years some subjective feeling(?)&lt;/p&gt;
-&lt;p&gt;That’s a great point.  His willingness to allow me and my  staff to coach him and coach him critically, you know, You did well. You did poorly. Here’s the deal. that allowed for a lot of success because that sets a tone for every other players that’s ever come through that door. Because someone like him accepts and wants direction and coaching and responds to it so well. It makes so difficult for anybody else to go in a different direction. That was huge for our success.&lt;/p&gt;
-&lt;h1 id=&quot;Q-What-did-he-teach-you-about-leadership&quot;&gt;&lt;a href=&quot;#Q-What-did-he-teach-you-about-leadership&quot; class=&quot;headerlink&quot; title=&quot;Q: What did he teach you about leadership?&quot;&gt;&lt;/a&gt;Q: What did he teach you about leadership?&lt;/h1&gt;&lt;p&gt;“That there are all kinds of leadership. His was a quiet [one]. He doesn’t wave a towel. He doesn’t give speeches. When he speaks it’s for a purpose. Less is more in a sense with him. So when he did speak, it meant something to people.&lt;/p&gt;
-&lt;p&gt;“And he led by example. He had a vision. Everybody bought into his vision. He was accepting. He was not judgmental of people. He didn’t even really need to demand because they knew inherently that what he expected was what they saw in him and what he did every day in practice and in games; how he handled a loss, how he handled that loss in Miami in the Finals, how he handled that win against Miami in the Finals. That’s who he was and that’s how he led.”&lt;/p&gt;
-&lt;h1 id=&quot;Q-Any-games-stick-out&quot;&gt;&lt;a href=&quot;#Q-Any-games-stick-out&quot; class=&quot;headerlink&quot; title=&quot;Q: Any games stick out?&quot;&gt;&lt;/a&gt;Q: Any games stick out?&lt;/h1&gt;&lt;p&gt;“No, not really. I remember a pretty neat summer league game when he first came in.  Ostertag blocked his shot. That was pretty cool.”&lt;/p&gt;
-&lt;p&gt;“Yo Timmy.”&lt;/p&gt;
-&lt;p&gt;“Okay. that’s all I can handle. Have a great summer everybody.”&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="thoughts" scheme="http://fredxue.com/categories/thoughts/"/>
-    
-    
-      <category term="［Duncun, Be better］" scheme="http://fredxue.com/tags/%EF%BC%BBDuncun-Be-better%EF%BC%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Browser Events Model</title>
-    <link href="http://fredxue.com/2016/03/10/Event/"/>
-    <id>http://fredxue.com/2016/03/10/Event/</id>
-    <published>2016-03-10T13:18:44.000Z</published>
-    <updated>2016-03-10T13:30:49.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Events-type&quot;&gt;&lt;a href=&quot;#Events-type&quot; class=&quot;headerlink&quot; title=&quot;Events type&quot;&gt;&lt;/a&gt;Events type&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;Common/W3C events: Mouse, Keyboard, HTML frame, HTML form&lt;/li&gt;
-&lt;li&gt;Touch events&lt;/li&gt;
-&lt;li&gt;Pointer Events&lt;br&gt;…&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Event-Flow&quot;&gt;&lt;a href=&quot;#Event-Flow&quot; class=&quot;headerlink&quot; title=&quot;Event Flow&quot;&gt;&lt;/a&gt;Event Flow&lt;/h2&gt;&lt;p&gt;Consider the situation when there are 2 elements nested together. Both have event handlers registered on the same event type, say “click”. When the user clicks on the inner element, there are two possible ways to handle it:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Trigger the elements from outer to inner (event capturing). This model is implemented in Netscape Navigator.&lt;/li&gt;
-&lt;li&gt;Trigger the elements from inner to outer (event bubbling). This model is implemented in Internet Explorer and other browsers.[13]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;W3C takes a middle position in this struggle. Events are first captured until it reaches the target element, and then bubbled up. During the event flow, an event can be responded to at any element in the path (an observer) in either phase by causing an action, and/or by stopping the event (with method event.stopPropagation() for W3C-conforming browsers and command event.cancelBubble = true for Internet Explorer), and/or by cancelling the default action for the event.&lt;/p&gt;
-&lt;h2 id=&quot;Event-Object&quot;&gt;&lt;a href=&quot;#Event-Object&quot; class=&quot;headerlink&quot; title=&quot;Event Object&quot;&gt;&lt;/a&gt;Event Object&lt;/h2&gt;&lt;p&gt;The Event object provides a lot of information about a particular event, including information about target element, key pressed, mouse button pressed, mouse position, etc. Unfortunately, there are very serious browser incompatibilities in this area.&lt;/p&gt;
-&lt;h2 id=&quot;Event-handling-models&quot;&gt;&lt;a href=&quot;#Event-handling-models&quot; class=&quot;headerlink&quot; title=&quot;Event handling models&quot;&gt;&lt;/a&gt;Event handling models&lt;/h2&gt;&lt;p&gt;Events and event handling become central to web programming with the addition of the language to browsers, accompanying a switch in the rendering architecture of browsers from fetch and load page rendering to event driven, reflow based, page rendering. Initially, browsers wait, until they receive all of the resources associated with a page, to parse, process, draw, and present the page to the user. The displayed page remains unchanged until the browser requests a new page. With the change to dynamic page rendering, browsers loop continuously between processing, drawing, presenting content, and waiting for some new event trigger. Event triggers include the completion of the loading of a resource on the network e.g., downloads an image that can now be drawn on the screen, the completion of parsing a resource by the browser e.g., processes the HTML content of a page, the interaction of a user with the contents of the page e.g., clicks a button. &lt;/p&gt;
-&lt;h3 id=&quot;Design-Pattern&quot;&gt;&lt;a href=&quot;#Design-Pattern&quot; class=&quot;headerlink&quot; title=&quot;Design Pattern&quot;&gt;&lt;/a&gt;Design Pattern&lt;/h3&gt;&lt;p&gt;The event system, at its core, is simply a programming design pattern. The pattern starts with an agreement over a kind of event and:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the name String used for the event,&lt;/li&gt;
-&lt;li&gt;the type of the data structure used to represent the key properties of that event, and&lt;/li&gt;
-&lt;li&gt;the JavaScript object which will ‘emit’ that event.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The pattern is implemented by&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;defining a JavaScript function which takes as an argument the data structure which was agreed upon, and&lt;/li&gt;
-&lt;li&gt;registering the function using the name String with the object which will emit the event.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;DOM-Level-0&quot;&gt;&lt;a href=&quot;#DOM-Level-0&quot; class=&quot;headerlink&quot; title=&quot;DOM Level 0&quot;&gt;&lt;/a&gt;DOM Level 0&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;inline model:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#60;a href=&amp;#34;http://www.example.com&amp;#34; onclick=&amp;#34;triggerAlert(&amp;#39;Joe&amp;#39;); return false;&amp;#34;&amp;#62;Joe&amp;#60;/a&amp;#62;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;traditional model:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var triggerAlert = function () &amp;#123;&amp;#10;&amp;#9;window.alert(&amp;#34;Hey Joe&amp;#34;);&amp;#10;&amp;#125;;&amp;#10;&amp;#10;// Assign an event handler&amp;#10;document.onclick = triggerAlert;&amp;#10;&amp;#10;// Assign another event handler&amp;#10;window.onload = triggerAlert;&amp;#10;&amp;#10;// Remove the event handler that was just assigned&amp;#10;window.onload = null;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;DOM-Level-2&quot;&gt;&lt;a href=&quot;#DOM-Level-2&quot; class=&quot;headerlink&quot; title=&quot;DOM Level 2&quot;&gt;&lt;/a&gt;DOM Level 2&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;//Allows the registration of event listeners on the event target.&amp;#10;addEventListener(DOMString type, EventListener listener, boolean useCapture)&amp;#123;&amp;#125;;&amp;#10;&amp;#10;//Allows the removal of event listeners from the event target.&amp;#10;removeEventListener(DOMString type, EventListener listener, boolean useCapture)&amp;#123;&amp;#125;;&amp;#10;&amp;#10;//Allows sending the event to the subscribed event listeners.&amp;#10;disPatchEvent(Event evt)&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Some useful things to know :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;To prevent an event from bubbling, developers must call the “stopPropagation()” method of the event object.&lt;/li&gt;
-&lt;li&gt;To prevent the default action of the event to be called, developers must call the “preventDefault” method of the event object.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;The main difference from the traditional model is that multiple event handlers can be registered for the same event.&lt;/em&gt;&lt;/strong&gt;  The useCapture option can also be used to specify that the handler should be called in the capture phase instead of the bubbling phase. This model is supported by Mozilla, Opera, Safari, Chrome and Konqueror.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IE soecific model omitted in this article. You can see &lt;a href=&quot;https://en.wikipedia.org/wiki/DOM_events#DOM_Level_0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;Create-Custom-Event&quot;&gt;&lt;a href=&quot;#Create-Custom-Event&quot; class=&quot;headerlink&quot; title=&quot;Create Custom Event&quot;&gt;&lt;/a&gt;Create Custom Event&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;h3 id=&quot;Step-1-Create-a-new-Event-object&quot;&gt;&lt;a href=&quot;#Step-1-Create-a-new-Event-object&quot; class=&quot;headerlink&quot; title=&quot;Step 1: Create a new Event object&quot;&gt;&lt;/a&gt;Step 1: Create a new Event object&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var event = new CustomEvent(&amp;#10;&amp;#9;&amp;#34;newMessage&amp;#34;, &amp;#10;&amp;#9;&amp;#123;&amp;#10;&amp;#9;&amp;#9;detail: &amp;#123;&amp;#10;&amp;#9;&amp;#9;&amp;#9;message: &amp;#34;Hello World!&amp;#34;,&amp;#10;&amp;#9;&amp;#9;&amp;#9;time: new Date(),&amp;#10;&amp;#9;&amp;#9;&amp;#125;,&amp;#10;&amp;#9;&amp;#9;bubbles: true,&amp;#10;&amp;#9;&amp;#9;cancelable: true&amp;#10;&amp;#9;&amp;#125;&amp;#10;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt; The second parameter is an object with three properties:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;detail: a child object providing custom information about the event. In this example, we’ve added a message and time.&lt;/li&gt;
-&lt;li&gt;bubbles: if true, events will bubble to ancestors of the element which fired the event.&lt;/li&gt;
-&lt;li&gt;cancelable: if true, events can be canceled using the event object’s stopPropagation() method.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&quot;Step-2-Dispatch-this-event-on-a-specific-element&quot;&gt;&lt;a href=&quot;#Step-2-Dispatch-this-event-on-a-specific-element&quot; class=&quot;headerlink&quot; title=&quot;Step 2: Dispatch this event on a specific element&quot;&gt;&lt;/a&gt;Step 2: Dispatch this event on a specific element&lt;/h3&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;document.getElementById(&amp;#34;msgbox&amp;#34;).dispatchEvent(event);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&quot;Step-3-Any-number-of-handlers-can-subscribe-to-this-event&quot;&gt;&lt;a href=&quot;#Step-3-Any-number-of-handlers-can-subscribe-to-this-event&quot; class=&quot;headerlink&quot; title=&quot;Step 3: Any number of handlers can subscribe to this event&quot;&gt;&lt;/a&gt;Step 3: Any number of handlers can subscribe to this event&lt;/h3&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;document.addEventListener(&amp;#34;newMessage&amp;#34;, newMessageHandler, false);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="binary" scheme="http://fredxue.com/categories/binary/"/>
-    
-    
-      <category term="events" scheme="http://fredxue.com/tags/events/"/>
-    
-      <category term="js" scheme="http://fredxue.com/tags/js/"/>
-    
-      <category term="web" scheme="http://fredxue.com/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2015下半年读书总结</title>
-    <link href="http://fredxue.com/2016/03/07/reading2015/"/>
-    <id>http://fredxue.com/2016/03/07/reading2015/</id>
-    <published>2016-03-07T05:44:13.000Z</published>
-    <updated>2016-03-07T05:53:39.000Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt; 读书便是体验千姿百态的生活。 &lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;《南大读本》-自然科学卷&quot;&gt;&lt;a href=&quot;#《南大读本》-自然科学卷&quot; class=&quot;headerlink&quot; title=&quot;《南大读本》 自然科学卷&quot;&gt;&lt;/a&gt;《南大读本》 自然科学卷&lt;/h1&gt;&lt;p&gt;这是学校出的一本通识教育的读本，序言是陈俊校长写的，题目是与伟大的书籍相遇，全文字字诚恳，有校长自己对读书的独到见解。校长写道，“读书是一种对话，通过语言媒介，我们能够跨越广袤的时空距离，去和作者对话，去和世界对话、和自己的内心对话”，不禁心有戚戚。虽然在校期间没有静心全力以赴地学习，如今到了工作岗位才知书到用时方恨少的道理，才越发抓紧地读书和学习。序言中说这套读本旨在帮助同学越出自己的专业藩篱，进入一个更加丰富多彩的阅读空间，读完书中大部分的文章的我觉得确实大有裨益。&lt;/p&gt;
-&lt;p&gt;好书自有一种召唤力！&lt;/p&gt;
-&lt;p&gt;总的来说，经济与社会，自然与生命，全球化与领导力三章中的选文以及编排和选文都对外行人很友好，基本上专注读来没有什么不能理解或晦涩的语言。 至于读者对哪些方面的文章感兴趣就因人而异了。 前几篇经济基础的文章让我这个门外汉窥得一些门道，后几篇关于社会科学和中国社会的文章不仅仅让人读的时候不断啧啧称道，也让人遇到了不少经典的伟大的书和作者，比如费孝通的《乡土中国》选文对中国社会行为和社会心理的描述简直精到，又比如《白领，美国的中产阶级》选文中对美国中产的生存状态和各种行为的心理分析和形成原因给出了深入的剖析，书中一些行为更是同平常生活中的我们如出一辙，就像是在写自己！这样读完一篇短短的选文怎么过瘾！当然在网上去购买了一些很喜欢，读来很有滋味的书买了下来，作为明年的阅读计划。&lt;/p&gt;
-&lt;h1 id=&quot;《菜根谭》-–-洪自诚&quot;&gt;&lt;a href=&quot;#《菜根谭》-–-洪自诚&quot; class=&quot;headerlink&quot; title=&quot;《菜根谭》 – 洪自诚&quot;&gt;&lt;/a&gt;《菜根谭》 – 洪自诚&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;人情世态，倏忽万端，不宜认得太认真。 尧夫支：“昔日所云我，今稍却是伊，不知今日我，又属后来谁？”&lt;/p&gt;
-&lt;p&gt;不可乘喜而轻诺，不可因醉而生嗔，不可乘快而多事，不可因倦而鲜终。&lt;/p&gt;
-&lt;p&gt;持身不可太皎洁，一切污辱垢秽要茹纳的；与人不可太分明，一切善恶贤愚要包容的。&lt;/p&gt;
-&lt;p&gt;炎凉之态，富贵更甚于贫贱；妒忌之心，骨肉尤狠于外人。&lt;/p&gt;
-&lt;p&gt;家人有过不宜暴扬，不宜轻弃。&lt;/p&gt;
-&lt;p&gt;红烛烧残，万念自然厌冷；黄粱梦破，一身亦似云浮。&lt;/p&gt;
-&lt;p&gt;千载奇逢，无如好书良友；一生清福，只在碗茗炉烟。&lt;/p&gt;
-&lt;p&gt;人生只为欲字所累，便如马如牛，听人羁络；为鹰为犬，任物鞭笞。&lt;/p&gt;
-&lt;p&gt;大聪明的人，小事必朦胧；大懵懂的人，小事必伺察。&lt;/p&gt;
-&lt;p&gt;如韩信以勇备震主被擒，陆机以才名冠世见杀，霍光败于权势逼君，石崇死于财赋敌国，皆以十分取败者也。 &lt;/p&gt;
-&lt;p&gt;荣与辱共蒂，厌辱何须求荣；生与死同根，贪生不必畏死。&lt;/p&gt;
-&lt;p&gt;从热闹场中出几句清冷言语，便扫除无限杀机；像寒微路上用一点赤热心肠，自培植许多生意&lt;/p&gt;
-&lt;p&gt;思入世而有为者，须先领得世外风光，否则无以脱垢浊之尘缘；思出世而无染着，须先谙尽世中滋味。&lt;/p&gt;
-&lt;p&gt;善启迪人心者，当因其所明而渐通之，毋强开其所闭；善移风化者，当因其所易而渐及之，毋轻矫其所难&lt;/p&gt;
-&lt;p&gt;好丑心太明，则物不契；贤愚心太明，则人不亲。士君子须是内精明而外浑厚，使好丑两得其平，贤愚共受其益，才是生成的德量。&lt;/p&gt;
-&lt;p&gt;以积财之心之心积学问，以求功名之念求道德，以爱妻之心爱父母，以保爵位之策保国家，出此入彼，念虑只差毫末。而超凡入圣，人品且判星渊矣。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;《The-Great-Gatsby》-—-F-Scott-Fitzgerald&quot;&gt;&lt;a href=&quot;#《The-Great-Gatsby》-—-F-Scott-Fitzgerald&quot; class=&quot;headerlink&quot; title=&quot;《The Great Gatsby》 — F.Scott Fitzgerald&quot;&gt;&lt;/a&gt;《The Great Gatsby》 — F.Scott Fitzgerald&lt;/h1&gt;&lt;p&gt;Gatsby believed in the green light, the orgastic future that year by year recedes before us. It eluded us then, but that’s no matter tomorrow we will run faster, stretch out our arms faster…  And one fine morning&lt;br&gt;So we beat on, boats against the current, borne back ceaselessly into the past.&lt;/p&gt;
-&lt;p&gt;现实生活中我常奉行对事不对人的准则，但是读小说若是不对人恐怕不如不读。 说实话，读起英文原著是很吃力的，一些环境和细节描写实在无法看懂，当然让阅读体验失色大半。但整个故事和人物的大体形象读下来还是可以掌握的，就像拍X光，只能看到人的骨架，看不清肉。整部小说只有在结尾部分读得时候有些共鸣，似乎走进了一点一个世纪前的长岛，似乎看到了盖茨比魂牵梦绕的对岸的绿光，似乎在脑海中勾画起了一个悲剧的人生起伏。&lt;br&gt;爱情游戏中若不能真正了解对方真正了解自己只能成为输家，如果觉得自己玩不起还是早点退出的好。 显然盖茨比一直看不透daisy，被心中那团虚无缥缈的情感拎着到处跑，最终成了牺牲品。&lt;br&gt;最终人们要过的是精神生活还是物质生活？上层社会是绝不会仅有二者其一的，只有能够做到兼顾的人才是大家&lt;br&gt;小说的结尾最令我感慨，最后一句话更是打动人心，我们奋力前行，逆水行舟，不断被推回到过去。一个美好，坚定，纯真，充满力量和激情的过去。&lt;/p&gt;
-&lt;h1 id=&quot;《黑客与画家-》–-Paul-Graham&quot;&gt;&lt;a href=&quot;#《黑客与画家-》–-Paul-Graham&quot; class=&quot;headerlink&quot; title=&quot;《黑客与画家 》– Paul Graham&quot;&gt;&lt;/a&gt;《黑客与画家 》– Paul Graham&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;编程语言的首要特性应该是允许动态扩展，&lt;/p&gt;
-&lt;p&gt;编程语言是用来帮助思考程序的，而不是用来表达你已经想好的程序，它应该是一支铅笔，而不是一支钢笔。&lt;/p&gt;
-&lt;p&gt;创作者一个学习的途径是通过范例，临摹大师作品。（确实，对于菜鸟来说白手起家写出一个美丽的作品难度很大，在初期模仿优秀的软件作品是一个很好的学习方式。）&lt;/p&gt;
-&lt;p&gt;一个优秀的工程师应该讲心理周期考虑在内，有的时候你愿意连续工作16个小时，而有的时候你什么都不想做。厌倦的时候再去做一些容易的工作。&lt;br&gt;（管理好自己的心理周期）&lt;/p&gt;
-&lt;p&gt;黑客必须像画家一样，时刻考虑到用户的人性需要，这样才能做出伟大的产品，你必须能够站在用户的角度思考问题。这意味着你要做其他人需要的事情，而不是你自己想做的事情。学会向没有技术背景的人解释技术问题。;&lt;/p&gt;
-&lt;p&gt;源代码应该可以自己解释自己。&lt;/p&gt;
-&lt;p&gt;不仅要展示一些当前的异端邪说，让每个人都大吃一惊，还要找出使用与所有年代的通用法则。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;工作是什么？ &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;公司一切行为都是为盈利。 公司的内部工作与许多人一起完成，你是为了满足顾客的某种需求而工作。&lt;/p&gt;
-&lt;p&gt;通过创造有价值的东西而致富，这种方法的优势不仅仅在于它是合法的，还在于它更简单。&lt;/p&gt;
-&lt;p&gt;并非所有痛苦都是有益的。世界上有有益的痛苦，也有无益的痛苦。你需要的是咬牙向前冲的痛苦，而不是脚被钉子扎破的痛苦。&lt;/p&gt;
-&lt;p&gt;推动人才成批涌现的最大因素就是，让有天赋的人聚在一起，共同解决某个难题。互相激励比天赋更重要，达芬奇之所以成为达芬奇，主要原因不仅仅是他的天赋，更重要的是他生活在当时的佛罗伦萨，而不是米兰。（和优秀的人为伍）&lt;/p&gt;
-&lt;p&gt;新技术被市场接纳的方式有两种，一种是自然成长式，另一种是大爆炸式&lt;/p&gt;
-&lt;p&gt;如果你正在写的代码一个小时之后就可以看到运行结果，这好比让你看到不远处就是唾手可得的奖励，你因此会受到激励和鼓舞。&lt;/p&gt;
-&lt;p&gt;画作永远没有完工的一天，你只是不在画下去而已。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;后感：&lt;br&gt;读《黑客与画家》的时候我正在求职，正是对行业和业界初次探索的时间点，书中一些观点和方法论让我收获良多。阅读这本书前后有些断断续续，文章章节之间似乎也没有太多关联，每个章节都是从不同的角度来解读互联网行业，后面几章也变成了对LISP语言的推崇。摘抄了一些觉得很好的观点，其实不必句句去分析，偶尔拿出来看看，不同的时间不同的环境会有不同的收获&lt;/p&gt;
-&lt;h1 id=&quot;15年阅读回顾&quot;&gt;&lt;a href=&quot;#15年阅读回顾&quot; class=&quot;headerlink&quot; title=&quot;15年阅读回顾&quot;&gt;&lt;/a&gt;15年阅读回顾&lt;/h1&gt;&lt;p&gt;除了上面列出来的一些摘抄或是写了短短的后感的书，还看了一些琐碎的书，不成体系，《算法导论》《JS语言精粹》《把时间当做朋友》等等。没看完的还有《乔布斯传》。&lt;/p&gt;
-&lt;p&gt;总的来说，看的书比较零碎，经典看得不多，书都偏向于应用或是现实，可能跟我急功近利的心境有关。为什么要读经典，脑海里突然想起这个问题，似乎有一本书就叫这个名字。是不是考虑要多一些经典的，经过时间打磨锤炼和证明的优秀的书籍和文字，太执着于现实或太执着于理想都可能会竹篮打水一场空。今年看书应该有些章法，多度一些经典大家之作为好，可以同主题同系列的连着看，好有比较和认知。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt; 读书便是体验千姿百态的生活。 &lt;/blockquote&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Reading" scheme="http://fredxue.com/categories/Reading/"/>
-    
-    
-      <category term="Wrong thing with books" scheme="http://fredxue.com/tags/Wrong-thing-with-books/"/>
+      <category term="［Space bound］" scheme="http://fredxue.com/tags/%EF%BC%BBSpace-bound%EF%BC%BD/"/>
     
   </entry>
   
