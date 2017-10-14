@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Something Binary</title>
-  <subtitle>Here Today. Gone Tommorrow.</subtitle>
+  <title>Xiaoyu Xue&#39;s Blog</title>
+  <subtitle>Here Today. Gone Tomorrow.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://fredxue.com/"/>
-  <updated>2016-08-08T08:35:55.077Z</updated>
-  <id>http://fredxue.com/</id>
+  <link href="http://fredxue.github.io/"/>
+  <updated>2016-08-08T08:35:55.000Z</updated>
+  <id>http://fredxue.github.io/</id>
   
   <author>
-    <name>Fred Xue</name>
+    <name>Xiaoyu Xue</name>
     
   </author>
   
@@ -17,10 +17,10 @@
   
   <entry>
     <title>(Repo)hexo搭建博客</title>
-    <link href="http://fredxue.com/2016/08/08/hexo/"/>
-    <id>http://fredxue.com/2016/08/08/hexo/</id>
+    <link href="http://fredxue.github.io/2016/08/08/hexo/"/>
+    <id>http://fredxue.github.io/2016/08/08/hexo/</id>
     <published>2016-08-08T08:31:37.000Z</published>
-    <updated>2016-08-08T08:35:55.077Z</updated>
+    <updated>2016-08-08T08:35:55.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;快速、简洁且高效的博客框架&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;原文-from-A-K-A-木鬼&quot;&gt;&lt;a href=&quot;#原文-from-A-K-A-木鬼&quot; class=&quot;headerlink&quot; title=&quot;原文 from A.K.A 木鬼&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://slowlysuck.com/2016/01/13/hexo-blog/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;原文 from A.K.A 木鬼&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;1、工具&quot;&gt;&lt;a href=&quot;#1、工具&quot; class=&quot;headerlink&quot; title=&quot;1、工具&quot;&gt;&lt;/a&gt;1、工具&lt;/h2&gt;&lt;h3 id=&quot;Node-js&quot;&gt;&lt;a href=&quot;#Node-js&quot; class=&quot;headerlink&quot; title=&quot;Node.js&quot;&gt;&lt;/a&gt;Node.js&lt;/h3&gt;&lt;blockquote&gt;
@@ -117,19 +117,19 @@
     
     </summary>
     
-      <category term="binary" scheme="http://fredxue.com/categories/binary/"/>
+      <category term="binary" scheme="http://fredxue.github.io/categories/binary/"/>
     
     
-      <category term="blog" scheme="http://fredxue.com/tags/blog/"/>
+      <category term="blog" scheme="http://fredxue.github.io/tags/blog/"/>
     
   </entry>
   
   <entry>
     <title>Java序列化</title>
-    <link href="http://fredxue.com/2016/08/08/java-ser/"/>
-    <id>http://fredxue.com/2016/08/08/java-ser/</id>
+    <link href="http://fredxue.github.io/2016/08/08/java-ser/"/>
+    <id>http://fredxue.github.io/2016/08/08/java-ser/</id>
     <published>2016-08-08T08:30:16.000Z</published>
-    <updated>2016-08-08T08:37:13.401Z</updated>
+    <updated>2016-08-08T08:37:13.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;JAVA默认序列化机制和其他序列化框架的特性分析&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;What-is-object-serializatoin&quot;&gt;&lt;a href=&quot;#What-is-object-serializatoin&quot; class=&quot;headerlink&quot; title=&quot;What is object serializatoin&quot;&gt;&lt;/a&gt;What is object serializatoin&lt;/h3&gt;&lt;p&gt;Object serialization is the process of saving an object’s state to a sequence of bytes, as well as the process of rebuilding those bytes into a live object at some future time.&lt;/p&gt;
@@ -211,19 +211,19 @@
     
     </summary>
     
-      <category term="bianry" scheme="http://fredxue.com/categories/bianry/"/>
+      <category term="bianry" scheme="http://fredxue.github.io/categories/bianry/"/>
     
     
-      <category term="java" scheme="http://fredxue.com/tags/java/"/>
+      <category term="java" scheme="http://fredxue.github.io/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>graduate</title>
-    <link href="http://fredxue.com/2016/07/22/graduate/"/>
-    <id>http://fredxue.com/2016/07/22/graduate/</id>
+    <link href="http://fredxue.github.io/2016/07/22/graduate/"/>
+    <id>http://fredxue.github.io/2016/07/22/graduate/</id>
     <published>2016-07-22T08:43:43.000Z</published>
-    <updated>2016-07-22T09:36:51.112Z</updated>
+    <updated>2016-07-22T09:36:51.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;Q-You-know-this-moment-is-still-coming-It’s-still-hard-for-you-and-for-the-rest-of-team&quot;&gt;&lt;a href=&quot;#Q-You-know-this-moment-is-still-coming-It’s-still-hard-for-you-and-for-the-rest-of-team&quot; class=&quot;headerlink&quot; title=&quot;Q: You know this moment is still coming. It’s still hard for you and for the rest of team.&quot;&gt;&lt;/a&gt;Q: You know this moment is still coming. It’s still hard for you and for the rest of team.&lt;/h1&gt;&lt;p&gt;Pop: I’m trying to wrap my head aroud why I’m standing here and he’s not.  And we all know why. It’s not Tim Duncun to bring any attention to himself.&lt;/p&gt;
@@ -254,17 +254,17 @@
     
     </summary>
     
-      <category term="thoughts" scheme="http://fredxue.com/categories/thoughts/"/>
+      <category term="thoughts" scheme="http://fredxue.github.io/categories/thoughts/"/>
     
     
-      <category term="［Duncun, Be better］" scheme="http://fredxue.com/tags/%EF%BC%BBDuncun-Be-better%EF%BC%BD/"/>
+      <category term="［Duncun, Be better］" scheme="http://fredxue.github.io/tags/%EF%BC%BBDuncun-Be-better%EF%BC%BD/"/>
     
   </entry>
   
   <entry>
     <title>Browser Events Model</title>
-    <link href="http://fredxue.com/2016/03/10/Event/"/>
-    <id>http://fredxue.com/2016/03/10/Event/</id>
+    <link href="http://fredxue.github.io/2016/03/10/Event/"/>
+    <id>http://fredxue.github.io/2016/03/10/Event/</id>
     <published>2016-03-10T13:18:44.000Z</published>
     <updated>2016-03-10T13:30:49.000Z</updated>
     
@@ -332,21 +332,21 @@
     
     </summary>
     
-      <category term="binary" scheme="http://fredxue.com/categories/binary/"/>
+      <category term="binary" scheme="http://fredxue.github.io/categories/binary/"/>
     
     
-      <category term="events" scheme="http://fredxue.com/tags/events/"/>
+      <category term="events" scheme="http://fredxue.github.io/tags/events/"/>
     
-      <category term="js" scheme="http://fredxue.com/tags/js/"/>
+      <category term="js" scheme="http://fredxue.github.io/tags/js/"/>
     
-      <category term="web" scheme="http://fredxue.com/tags/web/"/>
+      <category term="web" scheme="http://fredxue.github.io/tags/web/"/>
     
   </entry>
   
   <entry>
     <title>2015下半年读书总结</title>
-    <link href="http://fredxue.com/2016/03/07/reading2015/"/>
-    <id>http://fredxue.com/2016/03/07/reading2015/</id>
+    <link href="http://fredxue.github.io/2016/03/07/reading2015/"/>
+    <id>http://fredxue.github.io/2016/03/07/reading2015/</id>
     <published>2016-03-07T05:44:13.000Z</published>
     <updated>2016-03-07T05:53:39.000Z</updated>
     
@@ -404,10 +404,10 @@
     
     </summary>
     
-      <category term="Reading" scheme="http://fredxue.com/categories/Reading/"/>
+      <category term="Reading" scheme="http://fredxue.github.io/categories/Reading/"/>
     
     
-      <category term="Wrong thing with books" scheme="http://fredxue.com/tags/Wrong-thing-with-books/"/>
+      <category term="Wrong thing with books" scheme="http://fredxue.github.io/tags/Wrong-thing-with-books/"/>
     
   </entry>
   
