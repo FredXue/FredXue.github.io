@@ -157,10 +157,9 @@
     <link href="http://fredxue.com/2016/03/10/Event/"/>
     <id>http://fredxue.com/2016/03/10/Event/</id>
     <published>2016-03-10T13:18:44.000Z</published>
-    <updated>2017-10-14T17:09:05.173Z</updated>
+    <updated>2017-10-14T17:14:34.701Z</updated>
     
-    <content type="html">&lt;!--&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;--&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+    <content type="html">&lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Events-type&quot;&gt;&lt;a href=&quot;#Events-type&quot; class=&quot;headerlink&quot; title=&quot;Events type&quot;&gt;&lt;/a&gt;Events type&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;Common/W3C events: Mouse, Keyboard, HTML frame, HTML form&lt;/li&gt;
 &lt;li&gt;Touch events&lt;/li&gt;
@@ -220,7 +219,7 @@
     
     <summary type="html">
     
-      &lt;!--&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;--&gt;
+      &lt;p&gt;&lt;blockquote class=&quot;blockquote-center&quot;&gt;A Brief Introduction to Browser Events Model&lt;/blockquote&gt;&lt;br&gt;
     
     </summary>
     
